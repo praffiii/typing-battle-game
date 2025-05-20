@@ -14,10 +14,8 @@ Typing Battle is a web-based mini game where players type words quickly and accu
 
 🛠️ Built With
 HTML
-
-CSS (not included in this repo but can be added)
-
-JavaScript (vanilla JS, no frameworks)
+CSS 
+JavaScript
 
 🚀 How to Play
 Clone or download the repository
