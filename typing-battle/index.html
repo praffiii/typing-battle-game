@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Battle</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Start Game Modal -->
+    <div id="start-modal" class="modal">
+      <div class="modal-content">
+        <h2>Welcome to Typing Battle!</h2>
+        <p>Type words to defeat the boss.</p>
+        <p class="start-prompt">Press Enter to Start</p>
+      </div>
+    </div>
+
+    <div class="game-container" style="display: none">
+      <h1>Typing Battle</h1>
+
+      <!-- Status Bar -->
+      <div class="status-bar">
+        <div class="status-item">
+          <span>Level: </span>
+          <span id="level">1</span>
+        </div>
+        <div class="status-item">
+          <span>Points: </span>
+          <span id="points">0</span>
+        </div>
+      </div>
+
+      <!-- Health Bars -->
+      <div class="health-bars">
+        <div class="health-bar">
+          <div class="label">Player HP: <span id="player-health">10</span></div>
+          <div class="bar">
+            <div id="player-health-bar"></div>
+          </div>
+        </div>
+        <div class="health-bar">
+          <div class="label">Boss HP: <span id="boss-health">100</span></div>
+          <div class="bar">
+            <div id="boss-health-bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Word Display and Timer -->
+      <div class="game-area">
+        <div id="timer"></div>
+        <div id="word-display" contenteditable="true" spellcheck="false"></div>
+      </div>
+
+      <!-- Controls -->
+      <div class="controls">
+        <div class="control-hint">Press "1" to Begin Battle</div>
+      </div>
+    </div>
+
+    <!-- Pause Modal -->
+    <div id="pause-modal" class="modal">
+      <div class="modal-content">
+        <h2>Game Paused</h2>
+        <div class="modal-buttons">
+          <button id="resume-game">Resume Game</button>
+          <button id="exit-to-menu">Exit to Menu</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Game Over Modal -->
+    <div id="gameover-modal" class="modal">
+      <div class="modal-content">
+        <h2>Game Over</h2>
+        <p>Level Reached: <span id="final-level"></span></p>
+        <p>Final Score: <span id="final-points"></span></p>
+        <button onclick="location.reload()">Play Again</button>
+      </div>
+    </div>
+
+    <!-- Level Up Modal -->
+    <div id="levelup-modal" class="modal">
+      <div class="modal-content">
+        <h2>Level Up!</h2>
+        <p>Congratulations! You've defeated the boss!</p>
+        <p>Current Level: <span id="current-level"></span></p>
+        <p>Total Points: <span id="current-points"></span></p>
+        <div class="modal-buttons">
+          <button id="continue-game">Continue (1)</button>
+          <button id="end-game">End Game (2)</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
