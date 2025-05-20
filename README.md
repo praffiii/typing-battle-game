@@ -1,7 +1,9 @@
 🎮 Typing Battle
+
 Typing Battle is a web-based mini game where players type words quickly and accurately to defeat enemies. It challenges your typing speed and precision while offering a fun, interactive battle experience.
 
 🔧 Key Features
+
 ⚔️ Boss battle system with health bars
 
 🔡 Type random words to deal damage
